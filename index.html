@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A-TECH Computer Training Centre | Faridabad</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f8ff;
+    color:#17213c;
+    line-height:1.6;
+}
+
+header{
+    background:#ffffff;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:800;
+    color:#172d68;
+}
+
+.logo span{
+    color:#287bea;
+}
+
+nav a{
+    text-decoration:none;
+    color:#17213c;
+    margin-left:22px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#287bea;
+}
+
+.hero{
+    background:linear-gradient(135deg,#0b1538,#172d68,#287bea);
+    color:white;
+    padding:90px 7%;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 18px;
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:30px;
+    margin-bottom:25px;
+    background:rgba(255,255,255,.08);
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.1;
+    margin-bottom:22px;
+}
+
+.hero p{
+    font-size:19px;
+    max-width:700px;
+    margin-bottom:30px;
+    color:#e3eaff;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+.btn-primary{
+    background:white;
+    color:#17316f;
+}
+
+.btn-outline{
+    border:1px solid white;
+    color:white;
+}
+
+section{
+    padding:70px 7%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:36px;
+    color:#172d68;
+}
+
+.section-title p{
+    color:#667085;
+}
+
+.courses{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:22px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:16px;
+    box-shadow:0 8px 25px rgba(30,60,120,.09);
+    border:1px solid #e7ecf5;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#17316f;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#667085;
+}
+
+.price{
+    font-size:20px;
+    font-weight:bold;
+    color:#287bea;
+    margin-top:12px;
+}
+
+.about{
+    background:white;
+}
+
+.about-box{
+    max-width:950px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-box p{
+    color:#667085;
+    font-size:18px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:35px;
+}
+
+.feature{
+    padding:22px;
+    background:#f5f8ff;
+    border-radius:14px;
+    text-align:center;
+}
+
+.feature h3{
+    color:#17316f;
+    margin-bottom:8px;
+}
+
+.contact{
+    background:#0b1538;
+    color:white;
+}
+
+.contact-box{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.contact p{
+    color:#d9e1f5;
+    margin-bottom:20px;
+}
+
+.contact-info{
+    margin:25px 0;
+    font-size:18px;
+}
+
+footer{
+    background:#070d22;
+    color:#bfc8df;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:700px){
+    header{
+        padding:15px 5%;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .hero{
+        padding:65px 5%;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    section{
+        padding:55px 5%;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <span>A-TECH</span> COMPUTER TRAINING CENTRE
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+
+        <div class="badge">
+            Professional Computer Training • Industry-Oriented Learning
+        </div>
+
+        <h1>
+            Build Skills.<br>
+            Build Your Career.
+        </h1>
+
+        <p>
+            A-TECH Computer Training Centre provides basic to advanced
+            computer and technology courses with practical learning,
+            projects and career-focused training.
+        </p>
+
+        <a href="#courses" class="btn btn-primary">
+            Explore Courses
+        </a>
+
+        <a href="#contact" class="btn btn-outline">
+            Enquire Now
+        </a>
+
+    </div>
+</section>
+
+
+<section id="courses">
+
+    <div class="section-title">
+        <h2>Our Courses</h2>
+        <p>Learn practical skills for jobs, freelancing and business.</p>
+    </div>
+
+    <div class="courses">
+
+        <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>
+                SEO, Social Media Marketing, Google Ads,
+                Content Marketing, Analytics and practical projects.
+            </p>
+            <div class="price">₹35,000 • 6 Months</div>
+        </div>
+
+        <div class="card">
+            <h3>Graphic Designing</h3>
+            <p>
+                Learn professional graphic design tools,
+                branding, posters, social media designs and projects.
+            </p>
+            <div class="price">₹15,000</div>
+        </div>
+
+        <div class="card">
+            <h3>Web Designing</h3>
+            <p>
+                Learn HTML, CSS, JavaScript and modern
+                responsive website development.
+            </p>
+            <div class="price">₹26,000</div>
+        </div>
+
+        <div class="card">
+            <h3>Advanced Excel</h3>
+            <p>
+                Formulas, functions, data analysis,
+                dashboards, reports and practical Excel skills.
+            </p>
+            <div class="price">₹5,000</div>
+        </div>
+
+        <div class="card">
+            <h3>Tally Accounting</h3>
+            <p>
+                Accounting fundamentals, GST, inventory,
+                taxation and practical Tally training.
+            </p>
+            <div class="price">₹8,000</div>
+        </div>
+
+        <div class="card">
+            <h3>AutoCAD</h3>
+            <p>
+                Learn professional 2D drafting,
+                drawings, layouts and practical AutoCAD projects.
+            </p>
+            <div class="price">₹8,000</div>
+        </div>
+
+        <div class="card">
+            <h3>Data Analytics</h3>
+            <p>
+                Excel, Power BI, data visualization,
+                dashboards and analytical thinking.
+            </p>
+            <div class="price">Career Focused</div>
+        </div>
+
+        <div class="card">
+            <h3>AI & Generative AI</h3>
+            <p>
+                Learn modern AI tools and practical
+                Generative AI applications.
+            </p>
+            <div class="price">Practical Training</div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="about" id="about">
+
+    <div class="about-box">
+
+        <div class="section-title">
+            <h2>Why Choose A-TECH?</h2>
+        </div>
+
+        <p>
+            We focus on practical learning rather than only theory.
+            Our training is designed to help students develop
+            real-world skills for jobs, freelancing and business.
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>✓ Practical Learning</h3>
+                <p>Learn by doing real projects.</p>
+            </div>
+
+            <div class="feature">
+                <h3>✓ Career Focused</h3>
+                <p>Skills designed for today's job market.</p>
+            </div>
+
+            <div class="feature">
+                <h3>✓ Project Based</h3>
+                <p>Build practical projects during training.</p>
+            </div>
+
+            <div class="feature">
+                <h3>✓ Flexible Learning</h3>
+                <p>Daily 1.5 hour training.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contact" class="contact">
+
+    <div class="contact-box">
+
+        <h2>Start Your Learning Journey</h2>
+
+        <p>
+            Join A-TECH Computer Training Centre and build
+            skills for your career.
+        </p>
+
+        <div class="contact-info">
+
+            📍 Faridabad / Ballabgarh<br>
+            📞 8285635054<br>
+            ⏰ Daily 1.5 Hours • Saturday & Sunday Off
+
+        </div>
+
+        <a href="tel:8285635054" class="btn btn-primary">
+            Call Now
+        </a>
+
+        <a href="https://wa.me/918285635054" class="btn btn-outline">
+            WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+    © 2026 A-TECH Computer Training Centre.
+    All Rights Reserved.
+</footer>
+
+</body>
+</html>
