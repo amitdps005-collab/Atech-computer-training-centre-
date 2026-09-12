@@ -25,120 +25,112 @@ body{
 }
 
 header{
-    background:#ffffff;
-    padding:18px 7%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    background:#0b1f3a;
+    color:white;
     position:sticky;
     top:0;
     z-index:1000;
-    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    box-shadow:0 3px 15px rgba(0,0,0,.2);
+}
+
+.nav{
+    max-width:1150px;
+    margin:auto;
+    padding:16px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .logo{
-    font-size:24px;
-    font-weight:800;
-    color:#172d68;
+    font-size:22px;
+    font-weight:bold;
 }
 
 .logo span{
-    color:#287bea;
+    color:#45a3ff;
 }
 
 nav a{
+    color:white;
     text-decoration:none;
-    color:#17213c;
     margin-left:22px;
-    font-weight:600;
+    font-weight:bold;
 }
 
 nav a:hover{
-    color:#287bea;
+    color:#45a3ff;
 }
 
 .hero{
-    background:linear-gradient(135deg,#0b1538,#172d68,#287bea);
+    background:linear-gradient(135deg,#09203f,#1769aa);
     color:white;
-    padding:90px 7%;
-}
-
-.hero-content{
-    max-width:850px;
-}
-
-.badge{
-    display:inline-block;
-    padding:10px 18px;
-    border:1px solid rgba(255,255,255,.3);
-    border-radius:30px;
-    margin-bottom:25px;
-    background:rgba(255,255,255,.08);
+    text-align:center;
+    padding:85px 20px;
 }
 
 .hero h1{
-    font-size:52px;
-    line-height:1.1;
-    margin-bottom:22px;
+    font-size:42px;
+    margin-bottom:15px;
 }
 
 .hero p{
-    font-size:19px;
-    max-width:700px;
-    margin-bottom:30px;
-    color:#e3eaff;
+    font-size:20px;
+    max-width:750px;
+    margin:0 auto 25px;
 }
 
 .btn{
     display:inline-block;
-    padding:14px 25px;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:bold;
-    margin-right:10px;
-    margin-bottom:10px;
-}
-
-.btn-primary{
-    background:white;
-    color:#17316f;
-}
-
-.btn-outline{
-    border:1px solid white;
+    background:#ff6b35;
     color:white;
+    text-decoration:none;
+    padding:13px 25px;
+    border-radius:8px;
+    font-weight:bold;
+    margin:6px;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+.btn.whatsapp{
+    background:#20b15a;
 }
 
 section{
-    padding:70px 7%;
+    max-width:1150px;
+    margin:auto;
+    padding:65px 20px;
 }
 
-.section-title{
+.title{
     text-align:center;
-    margin-bottom:45px;
+    margin-bottom:35px;
 }
 
-.section-title h2{
-    font-size:36px;
-    color:#172d68;
+.title h2{
+    font-size:32px;
+    color:#0b1f3a;
 }
 
-.section-title p{
+.title p{
     color:#667085;
 }
 
 .courses{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:22px;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
 }
 
 .card{
     background:white;
-    padding:28px;
-    border-radius:16px;
-    box-shadow:0 8px 25px rgba(30,60,120,.09);
-    border:1px solid #e7ecf5;
+    padding:25px;
+    border-radius:14px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    border-top:5px solid #1769aa;
     transition:.3s;
 }
 
@@ -147,111 +139,103 @@ section{
 }
 
 .card h3{
-    color:#17316f;
+    color:#0b1f3a;
     margin-bottom:10px;
 }
 
-.card p{
-    color:#667085;
-}
-
 .price{
-    font-size:20px;
+    color:#1769aa;
     font-weight:bold;
-    color:#287bea;
-    margin-top:12px;
+    font-size:20px;
 }
 
 .about{
     background:white;
-}
-
-.about-box{
-    max-width:950px;
-    margin:auto;
-    text-align:center;
-}
-
-.about-box p{
-    color:#667085;
-    font-size:18px;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
 }
 
 .features{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:20px;
-    margin-top:35px;
+    margin-top:25px;
 }
 
 .feature{
-    padding:22px;
-    background:#f5f8ff;
-    border-radius:14px;
-    text-align:center;
+    background:#eef6ff;
+    padding:20px;
+    border-radius:10px;
 }
 
 .feature h3{
-    color:#17316f;
-    margin-bottom:8px;
-}
-
-.contact{
-    background:#0b1538;
-    color:white;
+    color:#1769aa;
+    margin-bottom:7px;
 }
 
 .contact-box{
-    max-width:850px;
-    margin:auto;
+    background:#0b1f3a;
+    color:white;
+    padding:40px 25px;
+    border-radius:16px;
     text-align:center;
 }
 
-.contact h2{
-    font-size:36px;
+.contact-box h2{
+    font-size:30px;
     margin-bottom:15px;
 }
 
-.contact p{
-    color:#d9e1f5;
-    margin-bottom:20px;
+.contact-info{
+    margin:20px 0;
+    font-size:17px;
 }
 
-.contact-info{
-    margin:25px 0;
-    font-size:18px;
+.contact-info div{
+    margin:8px 0;
 }
 
 footer{
-    background:#070d22;
-    color:#bfc8df;
+    background:#07162a;
+    color:#cbd5e1;
     text-align:center;
-    padding:25px;
+    padding:25px 15px;
+}
+
+footer strong{
+    color:white;
 }
 
 @media(max-width:700px){
-    header{
-        padding:15px 5%;
+    .nav{
+        flex-direction:column;
+        gap:12px;
     }
 
-    nav{
-        display:none;
+    nav a{
+        margin:0 7px;
+        font-size:14px;
     }
 
     .hero{
-        padding:65px 5%;
+        padding:65px 18px;
     }
 
     .hero h1{
-        font-size:40px;
+        font-size:31px;
+    }
+
+    .hero p{
+        font-size:17px;
     }
 
     section{
-        padding:55px 5%;
+        padding:50px 16px;
     }
 
-    .section-title h2{
-        font-size:30px;
+    .title h2{
+        font-size:27px;
     }
 }
 </style>
@@ -260,210 +244,190 @@ footer{
 <body>
 
 <header>
-    <div class="logo">
-        <span>A-TECH</span> COMPUTER TRAINING CENTRE
-    </div>
+<div class="nav">
+<div class="logo">A-TECH <span>COMPUTER TRAINING CENTRE</span></div>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#courses">Courses</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+<a href="#home">Home</a>
+<a href="#courses">Courses</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
 </header>
 
 <section class="hero" id="home">
-    <div class="hero-content">
+<h1>Build Skills. Build Your Career.</h1>
 
-        <div class="badge">
-            Professional Computer Training • Industry-Oriented Learning
-        </div>
+<p>
+Professional Computer Training for Jobs, Freelancing & Business.
+Learn practical skills with A-TECH Computer Training Centre.
+</p>
 
-        <h1>
-            Build Skills.<br>
-            Build Your Career.
-        </h1>
-
-        <p>
-            A-TECH Computer Training Centre provides basic to advanced
-            computer and technology courses with practical learning,
-            projects and career-focused training.
-        </p>
-
-        <a href="#courses" class="btn btn-primary">
-            Explore Courses
-        </a>
-
-        <a href="#contact" class="btn btn-outline">
-            Enquire Now
-        </a>
-
-    </div>
+<a class="btn" href="#courses">View Courses</a>
+<a class="btn whatsapp"
+href="https://wa.me/918285635054?text=Hello%20A-TECH%20Computer%20Training%20Centre,%20I%20want%20course%20details."
+target="_blank">
+WhatsApp Us
+</a>
 </section>
-
 
 <section id="courses">
 
-    <div class="section-title">
-        <h2>Our Courses</h2>
-        <p>Learn practical skills for jobs, freelancing and business.</p>
-    </div>
+<div class="title">
+<h2>Our Courses</h2>
+<p>Practical and career-focused computer training</p>
+</div>
 
-    <div class="courses">
+<div class="courses">
 
-        <div class="card">
-            <h3>Digital Marketing</h3>
-            <p>
-                SEO, Social Media Marketing, Google Ads,
-                Content Marketing, Analytics and practical projects.
-            </p>
-            <div class="price">₹35,000 • 6 Months</div>
-        </div>
+<div class="card">
+<h3>Digital Marketing</h3>
+<p>Complete practical digital marketing training from basic to advanced.</p>
+<p class="price">₹35,000 • 6 Months</p>
+</div>
 
-        <div class="card">
-            <h3>Graphic Designing</h3>
-            <p>
-                Learn professional graphic design tools,
-                branding, posters, social media designs and projects.
-            </p>
-            <div class="price">₹15,000</div>
-        </div>
+<div class="card">
+<h3>Graphic Designing</h3>
+<p>Learn professional graphic design and creative tools.</p>
+<p class="price">₹15,000</p>
+</div>
 
-        <div class="card">
-            <h3>Web Designing</h3>
-            <p>
-                Learn HTML, CSS, JavaScript and modern
-                responsive website development.
-            </p>
-            <div class="price">₹26,000</div>
-        </div>
+<div class="card">
+<h3>Web Designing</h3>
+<p>Learn website design, HTML, CSS and modern web skills.</p>
+<p class="price">₹26,000</p>
+</div>
 
-        <div class="card">
-            <h3>Advanced Excel</h3>
-            <p>
-                Formulas, functions, data analysis,
-                dashboards, reports and practical Excel skills.
-            </p>
-            <div class="price">₹5,000</div>
-        </div>
+<div class="card">
+<h3>Advanced Excel</h3>
+<p>Formulas, functions, data handling and professional Excel skills.</p>
+<p class="price">₹5,000</p>
+</div>
 
-        <div class="card">
-            <h3>Tally Accounting</h3>
-            <p>
-                Accounting fundamentals, GST, inventory,
-                taxation and practical Tally training.
-            </p>
-            <div class="price">₹8,000</div>
-        </div>
+<div class="card">
+<h3>Tally Accounting</h3>
+<p>Practical accounting and Tally training for career development.</p>
+<p class="price">₹8,000</p>
+</div>
 
-        <div class="card">
-            <h3>AutoCAD</h3>
-            <p>
-                Learn professional 2D drafting,
-                drawings, layouts and practical AutoCAD projects.
-            </p>
-            <div class="price">₹8,000</div>
-        </div>
+<div class="card">
+<h3>AutoCAD</h3>
+<p>Professional AutoCAD training with practical projects.</p>
+<p class="price">₹8,000</p>
+</div>
 
-        <div class="card">
-            <h3>Data Analytics</h3>
-            <p>
-                Excel, Power BI, data visualization,
-                dashboards and analytical thinking.
-            </p>
-            <div class="price">Career Focused</div>
-        </div>
+<div class="card">
+<h3>Data Analytics</h3>
+<p>Career-focused training in data analysis and business insights.</p>
+<p class="price">Career Focused</p>
+</div>
 
-        <div class="card">
-            <h3>AI & Generative AI</h3>
-            <p>
-                Learn modern AI tools and practical
-                Generative AI applications.
-            </p>
-            <div class="price">Practical Training</div>
-        </div>
+<div class="card">
+<h3>AI & Generative AI</h3>
+<p>Practical training to use modern AI tools effectively.</p>
+<p class="price">Practical Training</p>
+</div>
 
-    </div>
+</div>
 </section>
 
+<section id="about">
 
-<section class="about" id="about">
+<div class="title">
+<h2>Why Choose A-TECH?</h2>
+<p>Learn today's skills for tomorrow's opportunities</p>
+</div>
 
-    <div class="about-box">
+<div class="about">
 
-        <div class="section-title">
-            <h2>Why Choose A-TECH?</h2>
-        </div>
+<p>
+A-TECH Computer Training Centre provides practical and
+career-oriented computer education for students, job seekers,
+freelancers and business owners.
+</p>
 
-        <p>
-            We focus on practical learning rather than only theory.
-            Our training is designed to help students develop
-            real-world skills for jobs, freelancing and business.
-        </p>
+<div class="features">
 
-        <div class="features">
+<div class="feature">
+<h3>Practical Training</h3>
+<p>Learn by doing real-world practical work and projects.</p>
+</div>
 
-            <div class="feature">
-                <h3>✓ Practical Learning</h3>
-                <p>Learn by doing real projects.</p>
-            </div>
+<div class="feature">
+<h3>Career Focused</h3>
+<p>Training designed for jobs, freelancing and business.</p>
+</div>
 
-            <div class="feature">
-                <h3>✓ Career Focused</h3>
-                <p>Skills designed for today's job market.</p>
-            </div>
+<div class="feature">
+<h3>Flexible Learning</h3>
+<p>Daily 1.5 hours of focused training.</p>
+</div>
 
-            <div class="feature">
-                <h3>✓ Project Based</h3>
-                <p>Build practical projects during training.</p>
-            </div>
+<div class="feature">
+<h3>Experienced Guidance</h3>
+<p>Get guidance throughout your learning journey.</p>
+</div>
 
-            <div class="feature">
-                <h3>✓ Flexible Learning</h3>
-                <p>Daily 1.5 hour training.</p>
-            </div>
+</div>
 
-        </div>
+<br>
 
-    </div>
+<p>
+<strong>Class Timing:</strong> 1.5 Hours Daily |
+<strong>Saturday & Sunday:</strong> Off
+</p>
+
+</div>
 </section>
 
+<section id="contact">
 
-<section id="contact" class="contact">
+<div class="contact-box">
 
-    <div class="contact-box">
+<h2>Start Your Learning Journey</h2>
 
-        <h2>Start Your Learning Journey</h2>
+<p>Contact us for course details, admission and enquiries.</p>
 
-        <p>
-            Join A-TECH Computer Training Centre and build
-            skills for your career.
-        </p>
+<div class="contact-info">
 
-        <div class="contact-info">
+<div>📞 <strong>+91 82856 35054</strong></div>
 
-            📍 Faridabad / Ballabgarh<br>
-            📞 8285635054<br>
-            ⏰ Daily 1.5 Hours • Saturday & Sunday Off
+<div>📧 <strong>Amitdps005@gmail.com</strong></div>
 
-        </div>
+<div>📍 <strong>Ambedkar Chowk, Ballabgarh, Faridabad, Haryana</strong></div>
 
-        <a href="tel:8285635054" class="btn btn-primary">
-            Call Now
-        </a>
+<div>Near Aggarwal College</div>
 
-        <a href="https://wa.me/918285635054" class="btn btn-outline">
-            WhatsApp
-        </a>
+</div>
 
-    </div>
+<a class="btn whatsapp"
+href="https://wa.me/918285635054?text=Hello%20A-TECH,%20I%20want%20information%20about%20your%20courses."
+target="_blank">
+Chat on WhatsApp
+</a>
 
+<a class="btn"
+href="https://www.google.com/maps/search/?api=1&query=A-TECH+Computer+Training+Centre+Ambedkar+Chowk+Ballabgarh+Faridabad"
+target="_blank">
+Get Directions
+</a>
+
+</div>
 </section>
-
 
 <footer>
-    © 2026 A-TECH Computer Training Centre.
-    All Rights Reserved.
+<p>
+<strong>A-TECH COMPUTER TRAINING CENTRE</strong>
+</p>
+
+<p>
+Ambedkar Chowk, Ballabgarh, Faridabad, Haryana
+</p>
+
+<p>
+© 2026 A-TECH Computer Training Centre. All Rights Reserved.
+</p>
 </footer>
 
 </body>
